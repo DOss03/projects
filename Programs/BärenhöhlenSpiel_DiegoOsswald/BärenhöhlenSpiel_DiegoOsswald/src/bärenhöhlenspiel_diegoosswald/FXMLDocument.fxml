@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="405.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bärenhöhlenspiel_diegoosswald.FXMLDocumentController">
+    <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="134.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="160.0" AnchorPane.topAnchor="64.0">
+         <children>
+            <Label minHeight="16.0" minWidth="69" text="1. Würfel:" />
+              <Label minHeight="16" minWidth="69" text="2. Würfel:" />
+            <Label minHeight="16" minWidth="69" text="3. Würfel:" />
+            <Label minHeight="16" minWidth="69" text="4. Würfel:" />
+            <Label minHeight="16" minWidth="69" text="5. Würfel:" />
+         </children>
+      </VBox>
+      <TextField fx:id="anzahlhöhlen" layoutX="116.0" layoutY="233.0" prefHeight="16.0" prefWidth="120.0" promptText="Anzahl raten" />
+      <TextField fx:id="anzahlbären" layoutX="116.0" layoutY="270.0" prefHeight="16.0" prefWidth="120.0" promptText="Anzahl raten" />
+      <Label fx:id="lösungBH" layoutX="280.0" layoutY="238.0" minHeight="16.0" minWidth="69" text="L" textFill="#16eb76" />
+      <Label fx:id="lösungB" layoutX="280.0" layoutY="275.0" minHeight="16.0" minWidth="69" text="L" textFill="#16eb76" />
+      <Label layoutX="14.0" layoutY="233.0" text="Bärenhöhlen:" />
+      <Label layoutX="14.0" layoutY="270.0" text="Bären:" />
+      <Label layoutX="280.0" layoutY="205.0" minHeight="16.0" minWidth="69" text="Lösung" textFill="#16eb76" />
+      <VBox layoutX="101.0" layoutY="61.0" prefHeight="134.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="160.0" AnchorPane.topAnchor="64.0">
+         <children>
+            <Label fx:id="würfel1" minHeight="16.0" minWidth="69" text="Würfelzahl" />
+            <Label fx:id="würfel2" minHeight="16" minWidth="69" text="Würfelzahl" />
+            <Label fx:id="würfel3" minHeight="16" minWidth="69" text="Würfelzahl" />
+            <Label fx:id="würfel4" minHeight="16" minWidth="69" text="Würfelzahl" />
+            <Label fx:id="würfel5" minHeight="16" minWidth="69" text="Würfelzahl" />
+         </children>
+      </VBox>
+      <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#würfeln" prefHeight="31.0" prefWidth="346.0" text="würfeln" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0" />
+      <Button layoutX="22.0" layoutY="306.0" mnemonicParsing="false" onAction="#prüfen" prefHeight="31.0" prefWidth="346.0" text="prüfen" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0" />
+      <Button layoutX="329.0" layoutY="64.0" mnemonicParsing="false" onAction="#hilfeFenster" text="Hilfe" underline="true" AnchorPane.rightAnchor="22.0" />
+      <Label fx:id="lösung" layoutX="14.0" layoutY="351.0" minHeight="16" minWidth="69" prefHeight="21.0" prefWidth="388.0" />
+    </children>
+</AnchorPane>

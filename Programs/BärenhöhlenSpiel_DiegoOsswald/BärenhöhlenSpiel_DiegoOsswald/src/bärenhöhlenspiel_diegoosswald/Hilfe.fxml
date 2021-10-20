@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bärenhöhlenspiel_diegoosswald.HilfeController">
+   <children>
+      <Label layoutX="286.0" layoutY="6.0" text="Hilfe" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <VBox layoutX="14.0" layoutY="98.0" prefHeight="205.0" prefWidth="312.0">
+         <children>
+            <Label alignment="TOP_LEFT" text="Das Bärenhöhlen Spiel wird wie folgt gespielt:">
+               <VBox.margin>
+                  <Insets bottom="16.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="TOP_LEFT" text="- Die Bärenhöhlen kann man zählen, indem" />
+            <Label alignment="TOP_LEFT" text="   man die Anzahl der Würfel mit einem Auge" />
+            <Label alignment="TOP_LEFT" text="   in der Mitte zählt. (=Anzahl ungerader" />
+            <Label alignment="TOP_LEFT" text="   Würfel)." />
+            <Label alignment="TOP_LEFT" text="- Die Bären kann man zählen, indem man von" />
+            <Label alignment="TOP_LEFT" text="   der Rückseite der ungeradenen Würfel (der" />
+            <Label alignment="TOP_LEFT" text="   Würfel mit Bärenhöhlen) alle  Augen" />
+            <Label alignment="TOP_LEFT" text="   zusammenzählt." />
+         </children>
+      </VBox>
+      <ImageView fitHeight="280.0" fitWidth="324.0" layoutX="334.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Schule/BBB/iap/2.%20Jahr/Modul%20120/Bär.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

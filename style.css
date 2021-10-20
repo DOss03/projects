@@ -1,0 +1,16 @@
+.header .col-12:last-child {
+    border-top: 1px solid aliceblue;
+}
+
+table, th, td {
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+tr.colored td {
+    background-color: aquamarine;
+}
+
+tr.mouseon td {
+    background-color:darkcyan;
+}

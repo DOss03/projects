@@ -1,0 +1,12 @@
+table, th, td {
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+tr.colored td {
+	background: #fafad2;
+}
+
+tr.mouseon td {
+	background: #1e90ff;
+}

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rechner.fxml.FXMLDocumentController">
+   <children>
+      <StackPane prefHeight="75.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="label" alignment="TOP_RIGHT" prefHeight="70.0" prefWidth="400.0" text="0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <padding>
+                  <Insets right="85.0" top="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </StackPane>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="7">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="8">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="9">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="/">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="4">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="6">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="*">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="3">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="-">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#delete" prefWidth="50.0" text="del">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processNumbers" prefWidth="50.0" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="=">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="+">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label text="Meter in (Inches, Miles, Feet) umrechnen:" />
+         </children></HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processZusatz" prefWidth="70.0" text="Inches">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processZusatz" prefWidth="70.0" text="Miles">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#processZusatz" prefWidth="70.0" text="Feet">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label text="Währung ">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label text="Euro Kurs eintragen:" />
+            <TextField fx:id="textKurs" promptText="Kurs eintragen" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label text="CHF eintragen:" />
+            <TextField fx:id="textCHF" promptText="CHF eintragen" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processWährung" text="Euro berechnen" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

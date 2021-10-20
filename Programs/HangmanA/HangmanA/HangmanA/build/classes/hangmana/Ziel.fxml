@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #deff7a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="261.0" layoutY="21.0" text="Ziel">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="109.0" prefHeight="21.0" prefWidth="505.0" text="Das Ziel des Spiels, ist es das Wort so schnell wie möglich zu erraten." />
+      <Label layoutX="217.0" layoutY="130.0" text="Die Regeln sind wie folgt:" />
+      <Label layoutX="60.0" layoutY="151.0" prefHeight="21.0" prefWidth="505.0" text="Man gibt EINEN Buchstaben ein und bestätigt diesen mit einem Knopfdruck" />
+      <Label layoutX="60.0" layoutY="172.0" prefHeight="21.0" prefWidth="498.0" text="Wenn dieser Buchstabe im Wort vorhanden ist dann erscheint dieser " />
+      <Label layoutX="60.0" layoutY="190.0" text="gross im Fenster. Wenn das Wort erraten wurde, ist das Spiel vorbei." />
+      <ImageView fitHeight="144.0" fitWidth="274.0" layoutX="172.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@images.png" />
+        </image>
+      </ImageView>
+      
+   </children>
+</AnchorPane>
