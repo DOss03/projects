@@ -7,14 +7,14 @@ $(document).ready(function () {
 	$("#footer p").css("font-weight", "bold");
 	$("body").css("padding-left", "20px");
 
-	// L�sung Aufgabe 3
+	// Lösung Aufgabe 3
 	$("#mainheader").click(function () {
 		$(this).css("border", "5px solid #0769AA");
 		$("p.maintext").css("font-size", "2em");
 		$("#footer > p").text("Doppelklick verkleinert wieder �");
 	});
 
-	// L�sung Aufgabe 4
+	// Lösung Aufgabe 4
 	$("#mainheader").dblclick(function () {
 		$(this).css("border", "5px solid transparent");
 		$("p.maintext").css("font-size", "1em");
